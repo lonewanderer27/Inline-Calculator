@@ -1,4 +1,6 @@
 ﻿using System;
+// ReSharper disable SuggestVarOrType_BuiltInTypes
+// ReSharper disable ClassNeverInstantiated.Global
 
 namespace Inline_Calculator
 {
@@ -113,12 +115,11 @@ namespace Inline_Calculator
                 {
                     if (_op1 == _op2)
                     {
-                        double oprd1AndOprd2AndOprd3Result = CalcThreeEquations(
+                        ans = CalcThreeEquations(
                             _operand1, 
                             _operand2, 
                             _operand3,
                             _op1);
-                        ans = oprd1AndOprd2AndOprd3Result;
                     }
                     else if (_op1 == '+' || _op1 == '-' && _op2 == '*' || _op2 == '/')
                     {
